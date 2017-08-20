@@ -1,0 +1,48 @@
+
+ASCII2 Print mode    Конфиругирование принтера
+00000000: 1B 4E 03 00                                            .N..              
+
+Set Default codepage WPC1251(Cyrilic)    Конфиругирование принтера
+00000000: 1B 4E 03 00 1F 1B 1F FF  |  49 0A 0A                   .N...яI..       
+
+Print Default codepage       Тест конфиругации принтера
+00000000: 1B 40 1C 2E 1B 21 00 80  |  81 82 83 84 85 86 87 88    .@...!.ЂЃ‚ѓ„…†‡€  
+00000010: 89 8A 8B 8C 8D 8E 8F 90  |  91 92 93 94 95 96 97 98    ‰Љ‹ЊЌЋЏђ‘’“”•–—  
+00000020: 99 9A 9B 9C 9D 9E 9F A0  |  A1 A2 A3 A4 A5 A6 A7 A8    ™љ›њќћџ ЎўЈ¤Ґ¦§Ё  
+00000030: A9 AA AB AC AD AE AF B0  |  B1 B2 B3 B4 B5 B6 B7 B8    ©Є«¬­®Ї°±Ііґµ¶·ё  
+00000040: B9 BA BB BC BD BE BF C0  |  C1 C2 C3 C4 C5 C6 C7 C8    №є»јЅѕїАБВГДЕЖЗИ  
+00000050: C9 CA CB CC CD CE CF D0  |  D1 D2 D3 D4 D5 D6 D7 D8    ЙКЛМНОПРСТУФХЦЧШ  
+00000060: D9 DA DB DC DD DE DF E0  |  E1 E2 E3 E4 E5 E6 E7 E8    ЩЪЫЬЭЮЯабвгдежзи  
+00000070: E9 EA EB EC ED EE EF F0  |  F1 F2 F3 F4 F5 F6 F7 F8    йклмнопрстуфхцчш  
+00000080: F9 FA FB FC FD FE FF 0A  |  0A 1B 21 30 80 81 82 83    щъыьэюя...!0ЂЃ‚ѓ  
+00000090: 84 85 86 87 88 89 8A 8B  |  8C 8D 8E 8F 90 91 92 93    „…†‡€‰Љ‹ЊЌЋЏђ‘’“  
+000000a0: 94 95 96 97 98 99 9A 9B  |  9C 9D 9E 9F A0 A1 A2 A3    ”•–—™љ›њќћџ ЎўЈ  
+000000b0: A4 A5 A6 A7 A8 A9 AA AB  |  AC AD AE AF B0 B1 B2 B3    ¤Ґ¦§Ё©Є«¬­®Ї°±Іі  
+000000c0: B4 B5 B6 B7 B8 B9 BA BB  |  BC BD BE BF C0 C1 C2 C3    ґµ¶·ё№є»јЅѕїАБВГ  
+000000d0: C4 C5 C6 C7 C8 C9 CA CB  |  CC CD CE CF D0 D1 D2 D3    ДЕЖЗИЙКЛМНОПРСТУ  
+000000e0: D4 D5 D6 D7 D8 D9 DA DB  |  DC DD DE DF E0 E1 E2 E3    ФХЦЧШЩЪЫЬЭЮЯабвг  
+000000f0: E4 E5 E6 E7 E8 E9 EA EB  |  EC ED EE EF F0 F1 F2 F3    дежзийклмнопрсту  
+00000100: F4 F5 F6 F7 F8 F9 FA FB  |  FC FD FE FF 0A 1B 40 1D    фхцчшщъыьэюя..@.  
+00000110: 56 41 48 1C 26                                         VAH.&             
+
+Где:
+
+1B 40
+ESC@ Initialize the printer
+
+1C 2E
+FS. Cancel the Chinese characters mode
+
+1B 21 00
+ESC ! n Select print mode
+
+Текст WPC1251(ANSI)
+
+1B 40
+ESC@ Initialize the printer
+
+1D 56 41 48 Не описано
+
+
+1C 26
+FS & Set the Chinese character mode
